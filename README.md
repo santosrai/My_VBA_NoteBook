@@ -10,3 +10,5 @@
       - eg. Dim var1 as Integer &nbsp; _ &nbsp;  Dim var1 as Integer, var2 as Integer\
         &nbsp; Dim var2 as Integer\
       - explaination: We can use as type Modifier with a single Dim
+- Parameter ByRef
+    - When you use an array as a parameter it cannot use ByVal, it must use ByRef. You can pass the array using ByVal making the parameter a variant.
