@@ -24,3 +24,11 @@
         - LBound(Arr) would cause a run time error(source:http://www.cpearson.com/excel/isarrayallocated.aspx)
             so IsError Function help to find array whether array is allocated or not
                 
+- Why global variables are not preffered in any programming language?
+       * Global variable has global scope. So any function in the program can modify it, and you don’t have any clue who       modified it.
+       * Makes debugging difficult as no clue who modified the value.
+       * Not suitable for multi-threaded program as threads would end up with race condition. To avoid this you may need sync mechanism which would slow down your program.
+       * Reduces readability of source code, as it is difficult to locate where the global variable is defined and where it gets modified/accessed. If you have large number of source files and good number of global variables then good luck in tracking the global variables. You really need to good IDE to make your life easy, still you will end up with bugs.
+       * If the variable occupies large space, then that much of space gets reserved till program exits, irrespective of the program needs it or not.
+       
+       
