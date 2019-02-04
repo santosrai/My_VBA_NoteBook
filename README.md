@@ -22,7 +22,7 @@
         - dimensioned with ReDim statement
         - difficult to find empty with isEmpty Function
         - LBound(Arr) would cause a run time error(source:http://www.cpearson.com/excel/isarrayallocated.aspx)
-            so IsError Function help to find array whether array is allocated or not\
+            so IsError Function help to find array whether array is allocated or not
                 
 - Why global variables are not preffered in any programming language?\
        - Global variable has global scope. So any function in the program can modify it, and you don’t have any clue who       modified it.\
