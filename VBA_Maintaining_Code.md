@@ -3,8 +3,9 @@
 'Purpose:\
 'Inputs:\
 'Outputs:\
-'---------------------------------------------------------------------------------------\
+'---------------------------------------------------------------------------------------
 
-- Constants should be Capitalized
- * FILENAME = ""
+- Constants should be Capitalized\
+ eg. FILENAME = ""
+ 
 - Indent your code 
