@@ -1,4 +1,4 @@
-# My_VBA_NoteBook
+# My VBA NoteBook Tips
 
 # 2018
 - Default type of variables in VBA is Variant
@@ -30,7 +30,10 @@
        - Not suitable for multi-threaded program as threads would end up with race condition. To avoid this you may need sync mechanism which would slow down your program.\
        - Reduces readability of source code, as it is difficult to locate where the global variable is defined and where it gets modified/accessed. If you have large number of source files and good number of global variables then good luck in tracking the global variables. You really need to good IDE to make your life easy, still you will end up with bugs.\
        - If the variable occupies large space, then that much of space gets reserved till program exits, irrespective of the program needs it or not.\
--  Avoid “.Select”: Try to avoid using the “.Select” method or “.Selection” object, for performance reasons, mostly.        
+-  Avoid “.Select”: Try to avoid using the “.Select” method or “.Selection” object, for performance reasons, mostly.\
+- Encapsulating API Calls
+    - Declarations are placeds at the top of the module and outside any Subs or Functions
+    - Wrappers perform input validation to ensure all parameters are passed as expected
        
        
        
