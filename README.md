@@ -32,7 +32,7 @@
        - If the variable occupies large space, then that much of space gets reserved till program exits, irrespective of the program needs it or not.\
 -  Avoid “.Select”: Try to avoid using the “.Select” method or “.Selection” object, for performance reasons, mostly.\
 - Encapsulating API Calls
-    - Declarations are placeds at the top of the module and outside any Subs or Functions
+    - Declarations are placed at the top of the module and outside any Subs or Functions
     - Wrappers perform input validation to ensure all parameters are passed as expected
        
        
