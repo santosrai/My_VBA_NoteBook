@@ -35,7 +35,7 @@
     - Declarations are placed at the top of the module and outside any Subs or Functions
     - Wrappers perform input validation to ensure all parameters are passed as expected
        
--Variable Declaring
+- Variable Declaring
     - Dim UserName As String = Dim UserName$
        
        
