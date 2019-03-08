@@ -37,5 +37,11 @@
        
 - Variable Declaring
     - Dim UserName As String = Dim UserName$
-       
+        
+- Difference between COM Add-in(CAI) and XLA type Add-in
+    - Performance: A CAI is an ActiveX DLL that is compiled into native machine code.
+    - Code Security: Using DLL file as code source, CAI is very secured.
+    - Multiple Application Support: CAI can be written to support multiple applications
+    - Callable Functions support: CAI allow you to call functions in the DLL directly from worksheet cells
+    
        
