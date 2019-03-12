@@ -43,5 +43,16 @@
     - Code Security: Using DLL file as code source, CAI is very secured.
     - Multiple Application Support: CAI can be written to support multiple applications
     - Callable Functions support: CAI allow you to call functions in the DLL directly from worksheet cells
+
+- Difference between Type vs Enum
+    - Enum : It contains an enumeration of constants, in simple mananer, you can group the multiple message in one constant
+
+```
+Const msg_Welcome = 1
+Const msg_Error = 2
+Const msg_Warning = 3
+Debug.Print "Message number: " & msg_Welcome
+```
+              
     
        
