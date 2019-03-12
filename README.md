@@ -45,13 +45,22 @@
     - Callable Functions support: CAI allow you to call functions in the DLL directly from worksheet cells
 
 - Difference between Type vs Enum
-    - Enum : It contains an enumeration of constants, in simple mananer, you can group the multiple message in one constant
+    - Enum : It contains an enumeration of constants, in simple manner, you can group the multiple message in one constant
 
 ```
+// Without enum
 Const msg_Welcome = 1
 Const msg_Error = 2
 Const msg_Warning = 3
 Debug.Print "Message number: " & msg_Welcome
+
+
+//With enum
+Enum msg
+    Welcome = 1
+    Error = 2
+    Warning = 3
+End Enum
 ```
               
     
