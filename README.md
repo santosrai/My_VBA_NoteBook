@@ -46,22 +46,33 @@
 
 - Difference between Type vs Enum
     - Enum : It contains an enumeration of constants, in simple manner, you can group the multiple message in one constant
-
-```
-// Without enum
-Const msg_Welcome = 1
-Const msg_Error = 2
-Const msg_Warning = 3
-Debug.Print "Message number: " & msg_Welcome
-
-
-//With enum
-Enum msg
-    Welcome = 1
-    Error = 2
-    Warning = 3
-End Enum
-```
-              
     
-       
+                ```
+                // Without enum
+                Const msg_Welcome = 1
+                Const msg_Error = 2
+                Const msg_Warning = 3
+                Debug.Print "Message number: " & msg_Welcome
+
+                //With enum
+                Enum msg
+                    Welcome = 1
+                    Error = 2
+                    Warning = 3
+                End Enum
+                Debug.Print "Message number: " & msg.Welcome
+                ```
+    - Type  : It is custom data type that can only contain variables(like defined class too), not functions nor procedures.         
+                
+                ```
+                Type msg
+                    Welcome as String
+                    Error as String
+                End Type
+                
+                Sub Main()
+                    Dim msgType as msg
+                    msgType.Welcome = "Hello"
+                End Sub
+                ```
+        - Enum is a simply a numeric value but type consist of multiple associated variables like classes  
