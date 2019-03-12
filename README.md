@@ -14,8 +14,8 @@
       - eg. 
       
             ```
-            Dim var1 as Integer;
-            Dim var1 as Integer,
+            Dim var1 as Integer
+            Dim var1 as Integer
             Dim var2 as Integer
             ```
      - explaination: We can use as type Modifier with a single Dim
