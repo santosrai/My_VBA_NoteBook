@@ -14,3 +14,8 @@
 
 
 ## Prepare test code for failures 
+
+## Use Pure functions
+   - do one job and do it well (if functions contain many jobs it will be dificult to test which is impure functions)
+
+## Use Utility Class Approach
