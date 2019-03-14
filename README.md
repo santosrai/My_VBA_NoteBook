@@ -30,7 +30,7 @@
     * Dyanamic Array
         - dimensioned with ReDim statement
         - difficult to find empty with isEmpty Function
-        - LBound(Arr) would cause a run time error(source:[Cpearson](http://www.cpearson.com/excel/isarrayallocated.aspx)
+        - LBound(Arr) would cause a run time error(source:[Cpearson](http://www.cpearson.com/excel/isarrayallocated.aspx))
             so IsError Function help to find array whether array is allocated or not
                 
 - Why global variables are not preffered in any programming language?\
