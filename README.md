@@ -30,7 +30,7 @@
     * Dyanamic Array
         - dimensioned with ReDim statement
         - difficult to find empty with isEmpty Function
-        - LBound(Arr) would cause a run time error(source:http://www.cpearson.com/excel/isarrayallocated.aspx)
+        - LBound(Arr) would cause a run time error(source:[Cpearson](http://www.cpearson.com/excel/isarrayallocated.aspx)
             so IsError Function help to find array whether array is allocated or not
                 
 - Why global variables are not preffered in any programming language?\
@@ -87,7 +87,7 @@
         - Enum is a simply a numeric value but type consist of multiple associated variables like classes  
 ― Creating Your Own Events In Class Modules
     - If you want a class to raise an event when a specified action or condition occurs. (Note: you cannot define,raise or recieve events in standard code modules otherwise it will give compiler error)
-    `Public Event EventName(Parameters, ByRef Cancel As Boolean)`
+    `Public Event EventName(Parameters, ByRef Cancel As Boolean)`\
    Once you declared your events, you need to raise the event in you class.\
    Lets take example, you can use BeforeTrigger and AfterTrigger event pair, BeforeTrigger notify what your code will do as action and then AfterTrigger notify that the action has been completed.You can also pass EventHandler such as Cancel to handle the event.
    ```
