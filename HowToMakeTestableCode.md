@@ -19,3 +19,6 @@
    - do one job and do it well (if functions contain many jobs it will be dificult to test which is impure functions)
 
 ## Use Utility Class Approach
+
+
+## Keep It Short, Sweet, and Visible
