@@ -85,3 +85,29 @@
                 End Sub
                 ```
         - Enum is a simply a numeric value but type consist of multiple associated variables like classes  
+― Creating Your Own Events In Class Modules
+    - If you want a class to raise an event when a specified action or condition occurs. (Note: you cannot define,raise or recieve events in standard code modules otherwise it will give compiler error)
+    `Public Event EventName(Parameters, ByRef Cancel As Boolean)`
+   Once you declared your events, you need to raise the event in you class.\
+   Lets take example, you can use BeforeTrigger and AfterTrigger event pair, BeforeTrigger notify what your code will do as action and then AfterTrigger notify that the action has been completed.You can also pass EventHandler such as Cancel to handle the event.
+   ```
+   Public Event EventName(IDNumber As Long, ByRef Cancel As Boolean)
+
+    Sub AAA()
+        Dim B As Boolean
+        Dim IDNumber As Long
+        IDNumber = 1234
+        Cancel = False
+        RaiseEvent EventName(IDNumber, Cancel)
+
+        If Cancel = False Then
+            ' Appropriate Non-Cancel Action
+        Else
+            ' Appropriate Cancel Action
+        End If
+    End Sub
+
+   ```
+   [Taken from cpearson](http://www.cpearson.com/excel/Events.aspx)
+   
+    
