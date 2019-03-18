@@ -22,3 +22,6 @@
 
 
 ## Keep It Short, Sweet, and Visible
+
+
+## Follow AAA (Arrange-Act-Assert) pattern
