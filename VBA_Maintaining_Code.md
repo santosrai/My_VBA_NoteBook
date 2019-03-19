@@ -11,7 +11,8 @@
 ## Indent your code 
 
 ## Refactor the code into simplest form
-    - Simplify Conditional Statements
+    
+   - Simplify Conditional Statements
     
      * Using Template Method (Decompose Conditional)
       - Before Refactor 
@@ -37,7 +38,7 @@
         }
     
         ```
-    * Replace Nested Conditional with Guard Clauses
+   * Replace Nested Conditional with Guard Clauses
       - Before Refactor 
         ```
         If (condition1) Then
