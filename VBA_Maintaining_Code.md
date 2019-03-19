@@ -10,8 +10,9 @@
  
 ## Indent your code 
 
-## Refactor the code into simplest form
-    - Simplify Conditional Statements
+## Refactor the code into simplest form ([https://refactoring.guru](https://refactoring.guru))
+
+- Simplify Conditional Statements
     
      * Using Template Method (Decompose Conditional)
       - Before Refactor 
