@@ -10,10 +10,11 @@
  
 ## Indent your code 
 
+
 ## Refactor the code into simplest form ([https://refactoring.guru](https://refactoring.guru))
 
 - Simplify Conditional Statements
-    
+
      * Using Template Method (Decompose Conditional)
       - Before Refactor 
         ```
@@ -38,7 +39,7 @@
         }
     
         ```
-    * Replace Nested Conditional with Guard Clauses
+   * Replace Nested Conditional with Guard Clauses
       - Before Refactor 
         ```
         If (condition1) Then
