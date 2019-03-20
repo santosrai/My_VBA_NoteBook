@@ -25,7 +25,6 @@
             // Something
         } elseif (...)
         }
-    
         ```
          - After Refactor 
          
@@ -49,7 +48,6 @@
         ElseIf （condition3） Then
             // something
         End If
-    
         ```
          - After Refactor 
          
@@ -67,5 +65,9 @@
         If (condition3) Then
             //something
         End If
-        
         ```
+    * Replace Constructor [jetbrains.com](https://www.jetbrains.com/help/idea/refactoring-source-code.html)
+        - with Factory Method: this refactoring lets you hide a constructor and replace it with a static method which returns a new instance of a class. 
+    
+        - with Builder :  this refactoring helps hide a constructor, replacing its usages with the references to a newly generated builder class, or to an existing builder class.
+        
