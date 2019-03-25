@@ -109,5 +109,12 @@
 
    ```
    [Taken from cpearson](http://www.cpearson.com/excel/Events.aspx)
+
+- Multithreading in VBA ([source]( http://analystcave.com/excel-multithreading-vba-vs-vbscript-vs-c-net/))
+    - VBA doesnot support Multithreading natively. But there are some ways to do multi-threading in vba.
+    - Here are 3 ways
+        - COM/DLLs - eg C# and the parallel class to run in separate threads
+        - Using VBscript worker threads - run your VBA code in separate VBscript threads
+        - Using VBA worker threads executed- eg via VBscript copy the excel workbook and run your macro in parallel
    
     
