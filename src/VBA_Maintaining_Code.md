@@ -1,16 +1,16 @@
 ## Standard Way of Starting 
  * Comments on Functions or methods
 ```
-'---------------------------------------------------------------------------------------\
-'Purpose:\
-'Inputs:\
-'Return:\
+'---------------------------------------------------------------------------------------
+'Purpose:
+'Inputs:
+'Return:
 '---------------------------------------------------------------------------------------
 ```
 
  * Comments on Main Class
  ```
- '---------------------------------------------------------------------------
+ '------------------------------------------------------------------------------------------------
 ' Revision History:
 '-----------------
 ' Rev       Date(yyyy/mm/dd)    Version     Description
@@ -18,11 +18,11 @@
 ' 1          2019/03/12            v1.0      Initial Release
 '
 ' 2          2019/03/26            v2.0     - User Interface Setting for Move File Setting
-'                                           - Handle invalid value in userform record
+'                                           - Handle invalid value in userform
 '                                           - Code Refactoring
 '                                           - File Name is changed  yyyymmddhhmm -> yyyymmddhhmmss
 '                                           - Unit test Integration
-'---------------------------------------------------------------------------------------
+'-------------------------------------------------------------------------------------------------
 ```
 
 ## Constants should be Capitalized
