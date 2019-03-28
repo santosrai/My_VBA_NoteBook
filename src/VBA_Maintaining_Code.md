@@ -24,6 +24,20 @@
 '                                           - Unit test Integration
 '-------------------------------------------------------------------------------------------------
 ```
+* Error Handling
+```
+On Error GoTo ErrLabel
+  '// Task
+
+Exit_Handler:   
+    '//handling exit way
+    Exit Sub     
+ErrLabel:   
+    MsgBox "エラーが発生しました" & vbCr & vbCr & _
+            Err.Description, vbExclamation, "要確認"       
+Resume Exit_Handler
+
+```
 
 ## Constants should be Capitalized
  eg. FILENAME = ""
