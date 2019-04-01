@@ -22,6 +22,31 @@
 - Parameter ByRef
     - When you use an array as a parameter it cannot use ByVal, it must use ByRef. You can pass the array using ByVal making the parameter a variant.
 
+- Early and Late Binding
+    -  Early Binding
+    -  Example
+        ```
+        '  Create a variable to hold a new object.
+        Dim FS As System.IO.FileStream
+        ' Assign a new object to the variable.
+        FS = New System.IO.FileStream("C:\tmp.txt", 
+        System.IO.FileMode.Open)
+    
+        ```
+    -  Late Binding
+    -  Example
+        ```
+        Dim xlApp As Object
+        ' Late bind an instance of an Excel workbook.
+        xlApp = CreateObject("Excel.Application")
+        
+        ```
+    - Early Binding is better than Late Binding
+    - Early Binding allow the compiler to make important optimization and reduce the errors
+    - Late binding can only be used to access type members that are declared as Public. Accessing members declared as Friend or Protected Friend results in a run-time error.
+    - An object is late bound when it is assigned to a property or method of a variable that is declared to be of type Object
+  
+  
 # 2019
 - Types of Arrays in VBA(An Array is said to be allocated if it consumes memory, has valid lower and upper bounds and contain data even if that data is the default values for the data type of the aray, such as empty strings)
     * Static Array
@@ -84,7 +109,8 @@
                     msgType.Welcome = "Hello"
                 End Sub
                 ```
-        - Enum is a simply a numeric value but type consist of multiple associated variables like classes  
+        - Enum is a simply a numeric value but type consist of multiple associated variables like classes 
+    
 ― Creating Your Own Events In Class Modules
     - If you want a class to raise an event when a specified action or condition occurs. (Note: you cannot define,raise or recieve events in standard code modules otherwise it will give compiler error)
     `Public Event EventName(Parameters, ByRef Cancel As Boolean)`\
@@ -118,3 +144,10 @@
         - Using VBA worker threads executed- eg via VBscript copy the excel workbook and run your macro in parallel
    
     
+- Error Type
+    * Object variable or With block variable not set
+       - A variable was declared without specifying a type. If a variable is declared without specitying a type, it defaults to type Object
+       - You are attempting to reference an object that has been set to nothing
+       - You are attempting to access an element of array variable that wasn't properly declared
+       - You are attempting to access code within a ` With ... End With ` block before the block has been initialized.
+        A `With ... End With ` block must be initialized by executing the `With` statement entry point.
