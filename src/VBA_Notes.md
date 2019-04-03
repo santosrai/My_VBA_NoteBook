@@ -147,3 +147,10 @@
        - You are attempting to access an element of array variable that wasn't properly declared
        - You are attempting to access code within a ` With ... End With ` block before the block has been initialized.
         A `With ... End With ` block must be initialized by executing the `With` statement entry point.
+
+- Class Module parts
+     * There are four different items:
+        - Methods - functions/subs 
+        - Member variables - variables
+        - Properties - types of functions/subs behave like variables eg. setter or getter
+        - Events - subs that are triggered by an event
