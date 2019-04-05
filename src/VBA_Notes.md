@@ -156,7 +156,6 @@
         - Events - subs that are triggered by an event
 
 - Passing Arguments To an Excel UserForm
------------------------------------------
     NOTE : Before we go below, Let me remind that UserForm is just class module with a built-in user interface 
     * Global Variable : Not Safe Approach
     * Tag Property :
