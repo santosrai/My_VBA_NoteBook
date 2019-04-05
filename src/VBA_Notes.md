@@ -154,3 +154,42 @@
         - Member variables - variables
         - Properties - types of functions/subs behave like variables eg. setter or getter
         - Events - subs that are triggered by an event
+
+- Passing Arguments To an Excel UserForm
+-----------------------------------------
+    NOTE : Before we go below, Let me remind that UserForm is just class module with a built-in user interface 
+    * Global Variable : Not Safe Approach
+    * Tag Property :
+            - Stores extra information about form, report, or control 
+            - exception : You can store string expression upto 2048 characters long
+            - Use Case: to check the identity of a form, report, section, or control that is passed as a variable to procedure
+    * Properties :
+            - It is best practice
+            - It lets to set the values of variables
+            - It lets to change objects on the form
+            - It lets to perform other actions whenever a property is accessed
+            
+            - Let's do examples [Taken from](http://dailydoseofexcel.com/archives/2004/07/22/passing-arguments-to-a-userform/)
+            ```
+            // Userform
+                Private msMsg As String
+                
+                Private Sub CommandButton1_Click()
+                MsgBox msMsg
+                End Sub
+                
+                Property Let MyProp(sText As String)
+                msMsg = sText
+                End Property
+            
+            // Module
+                Sub ShowFormProp()
+                    Dim frmMyForm As UserForm3
+                    
+                    Set frmMyForm = New UserForm3
+                    frmMyForm.MyProp = "Pass to form"
+                    frmMyForm.Show
+                
+                End Sub
+                
+            ```
