@@ -169,6 +169,7 @@
             - It lets to perform other actions whenever a property is accessed
             
             - Let's do examples [Taken from](http://dailydoseofexcel.com/archives/2004/07/22/passing-arguments-to-a-userform/)
+            
             ```
             // Userform
                 Private msMsg As String
