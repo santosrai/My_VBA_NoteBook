@@ -42,7 +42,9 @@
     - Late binding can only be used to access type members that are declared as Public. Accessing members declared as Friend or Protected Friend results in a run-time error.
     - An object is late bound when it is assigned to a property or method of a variable that is declared to be of type Object
   
-  
+- UserForm.show vbModeless
+    - A workbook cannot be closed by clicking the red "X" Close button when that workbook is programmatically opened via a modal user form
+    - Using vbModeless will help to open workbook independently
 # 2019
 - Types of Arrays in VBA(An Array is said to be allocated if it consumes memory, has valid lower and upper bounds and contain data even if that data is the default values for the data type of the aray, such as empty strings)
     * Static Array
