@@ -1,0 +1,59 @@
+Option Explicit
+
+Public isFalse As Boolean
+
+Public Sub RunFunctionParallel()
+
+    Dim WaitingTime As Date
+ 
+    isFalse = False
+    
+    'Intialize the waiting time
+    WaitingTime = Now + TimeValue("00:00:01")
+    
+    Debug.Print "Wait until:" & WaitingTime
+    
+    'Execute First Function after waitingtime
+    Application.OnTime WaitingTime, "FirstFunction"
+        
+     'Execute Second Function
+     SecondFunction
+     
+     
+     'Result
+        '2Func:75-Time:2019/05/14 11:22:55
+        '2Func:76-Time:2019/05/14 11:22:55
+        '1Func : 1
+        '1Func : 2
+        '2Func:77-Time:2019/05/14 11:22:56
+        '2Func:78-Time:2019/05/14 11:22:56
+
+End Sub
+
+Public Sub FirstFunction()
+    Dim i As Integer
+
+     For i = 1 To 2
+            Debug.Print "1Func : " & i
+
+    Next i
+    'To Stop the for loop of second function
+    'isFalse = True
+End Sub
+
+
+Public Sub SecondFunction()
+
+Dim i As Integer
+
+     For i = 1 To 200
+            
+            DoEvents
+            
+            If isFalse Then Exit For
+            
+            Debug.Print "2Func: " & i & "-Time: " & Now
+    Next i
+    
+End Sub
+
