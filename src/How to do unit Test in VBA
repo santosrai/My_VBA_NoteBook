@@ -1,0 +1,14 @@
+# How to do unit Test in VBA?
+Reviewing most of code in vba is monolithic.But to make robust application we have to think on the basis of Single Responsibility Principle. Thus, macro procedure should be divided into smaller, more focused chunks.
+* Note: all vba code cannot be unit-tested.For example
+    - dependencies affect global state, require user input (MsgBox, InputBox, forms, dialogs, etc.) 
+    - access external resources – like a database
+    - the file system, …or a worksheet.
+
+# unit test
+ Mostly it has 3 sub division
+- Arrange : Declaration and Initialization
+- Act     : Implimentation
+- Assert  : Check the expected result to actual result
+
+More details goto [rubberduck](https://rubberduckvba.wordpress.com/2017/10/19/how-to-unit-test-vba-code/)
